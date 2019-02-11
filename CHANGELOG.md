@@ -1,5 +1,9 @@
 # Change Log of `@jigsaw/node-zookeeper-client`
 
+## unpublished
+
+- Replace `underscore` with `lodash`
+
 ## 0.2.3
 
 Same as original `node-zookeeper-client`, publish under `@jigsaw` scope.

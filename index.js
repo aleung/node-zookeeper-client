@@ -19,7 +19,7 @@ var util              = require('util');
 var net               = require('net');
 
 var async             = require('async');
-var u                 = require('underscore');
+var u                 = require('lodash');
 
 var jute              = require('./lib/jute');
 var ACL               = require('./lib/ACL.js');

@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "async": "~0.2.7",
-    "underscore": "~1.4.4"
+    "lodash": "4.17.11"
   },
   "licenses": [
     {
