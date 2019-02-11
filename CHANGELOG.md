@@ -1,5 +1,9 @@
 # Change Log of `@jigsaw/node-zookeeper-client`
 
+## 0.2.5
+
+- Add typescript typing
+
 ## 0.2.4
 
 - Apply fix to [issue #13](https://github.com/alexguan/node-zookeeper-client/issues/13)

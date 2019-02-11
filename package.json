@@ -1,9 +1,10 @@
 {
   "name": "@jigsaw/node-zookeeper-client",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A pure Javascript ZooKeeper client for Node.js.",
   "author": "Alex Guan <alex.guan@gmail.com>",
   "main": "index.js",
+  "typings": "index.d.ts",
   "keywords": [
     "zookeeper",
     "client",
