@@ -1,6 +1,6 @@
 # Change Log of `@jigsaw/node-zookeeper-client`
 
-## unpublished
+## 0.2.4
 
 - Apply fix to [issue #13](https://github.com/alexguan/node-zookeeper-client/issues/13)
 - Replace `underscore` with `lodash`
