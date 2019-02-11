@@ -1,0 +1,40 @@
+stages:
+  - test
+  - packaging
+  - final
+test:
+  stage: test
+  except:
+    - tags
+    - schedules
+  script:
+    - yarn install
+    - yarn test
+  tags:
+    - nodejs8
+  artifacts:
+    expire_in: 2 weeks
+    when: always
+    untracked: true
+npm_publish:
+  stage: packaging
+  only:
+    - /.*/@foss/node-zookeeper-client
+  except:
+    - tags
+    - schedules
+  script:
+    - npm run npm_publish
+  tags:
+    - nodejs8
+git_tag:
+  stage: final
+  only:
+    - /.*/@foss/node-zookeeper-client
+  except:
+    - tags
+    - schedules
+  script:
+    - npm run gittag
+  tags:
+    - nodejs8

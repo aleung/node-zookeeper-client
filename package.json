@@ -1,5 +1,5 @@
 {
-  "name": "node-zookeeper-client",
+  "name": "@jigsaw/node-zookeeper-client",
   "version": "0.2.3",
   "description": "A pure Javascript ZooKeeper client for Node.js.",
   "author": "Alex Guan <alex.guan@gmail.com>",
@@ -10,21 +10,20 @@
     "pure",
     "javascript"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alexguan/node-zookeeper-client"
-  },
+  "repository": "gitlab:foss/node-zookeeper-client",
   "scripts": {
     "pretest": "eslint index.js lib/*.js lib/jute/*.js",
     "test": "mocha --recursive --reporter spec test/*",
-    "coverage": "istanbul cover _mocha --recursive test/*"
+    "coverage": "istanbul cover _mocha --recursive test/*",
+    "npm_publish": "scripty",
+    "gittag": "scripty"
   },
   "engines": {
     "node": ">=0.6.0"
   },
   "dependencies": {
-    "underscore": "~1.4.4",
-    "async": "~0.2.7"
+    "async": "~0.2.7",
+    "underscore": "~1.4.4"
   },
   "licenses": [
     {
@@ -36,6 +35,7 @@
     "chai": "~1.5.0",
     "eslint": "^3.2.0",
     "istanbul": "~0.1.34",
-    "mocha": "~1.9.0"
+    "mocha": "~1.9.0",
+    "scripty": "^1.9.0"
   }
 }

@@ -1,4 +1,12 @@
-# Change Log
+# Change Log of `@jigsaw/node-zookeeper-client`
+
+## 0.2.3
+
+Same as original `node-zookeeper-client`, publish under `@jigsaw` scope.
+
+----
+
+# Original Change Log
 
 ## 0.2.3
 
